@@ -12,9 +12,13 @@
     "@expo/vector-icons": "^13.0.0",
     "expo": "~48.0.18",
     "expo-status-bar": "~1.4.4",
+    "formik": "^2.4.2",
     "react": "18.2.0",
     "react-native": "0.71.8",
-    "react-native-elements": "^3.4.3"
+    "react-native-elements": "^3.4.3",
+    "valid-url": "^1.0.9",
+    "yarn": "^1.22.19",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

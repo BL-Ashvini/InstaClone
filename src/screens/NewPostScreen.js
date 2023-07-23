@@ -8,7 +8,8 @@ import {
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import AddNewPost from "../components/newPost/AddNewPost";
-const NewPostScreen = () => {
+import { useNavigation } from "@react-navigation/native";
+const NewPostScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
@@ -17,9 +18,14 @@ const NewPostScreen = () => {
   );
 };
 const Header = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.headercontainer}>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("Home");
+        }}
+      >
         <Ionicons name="chevron-back-outline" size={24} color="white" />
       </TouchableOpacity>
       <Text style={{ color: "white", fontSize: 20, fontWeight: "700" }}>

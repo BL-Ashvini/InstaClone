@@ -7,7 +7,7 @@ import { PostData } from "../utilities/PostData";
 import BottomTabs from "../components/home/BottomTabs";
 import { BottomIcons } from "../utilities/BottomIcons";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />

@@ -1,8 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import HomeScreen from "./src/screens/HomeScreen";
-import NewPostScreen from "./src/screens/NewPostScreen";
+import Routes from "./src/navigations/Routes";
 
 export default function App() {
-  return <NewPostScreen />;
+  return <Routes />;
 }
